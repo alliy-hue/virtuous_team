@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtuous Pro - Optimized Interface</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0d1117; color: #e2e8f0; overflow-x: hidden; position: relative; }
+        .scrolled-header { background-color: rgba(31, 8, 74, 0.95) !important; transition: background-color 0.3s ease-in-out; }
+        @keyframes glitch-effect { 0% { transform: translate(0); text-shadow: none; } 20% { transform: translate(-2px, 2px); text-shadow: 2px -2px 0px rgba(74, 144, 226, 0.8), -2px 2px 0px rgba(138, 43, 226, 0.8); opacity: 0.95; } 23% { transform: translate(0); text-shadow: none; opacity: 1; } 90% { transform: translate(0); text-shadow: none; } 92% { transform: translate(3px, -3px); text-shadow: -3px 3px 0px rgba(138, 43, 226, 0.8), 3px -3px 0px rgba(74, 144, 226, 0.8); opacity: 0.95; } 95% { transform: translate(0); text-shadow: none; opacity: 1; } 100% { transform: translate(0); text-shadow: none; } }
+        .glitch-text-active { animation: glitch-effect 6s infinite alternate; }
+        .nav-link:hover { color: #7dd3fc; }
+        .btn-primary { transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(138, 43, 226, 0.5); }
+        @keyframes scanline-pulse { 0%, 100% { opacity: 0.7; box-shadow: 0 0 5px #4a90e2, 0 0 10px #4a90e2; width: 10%; } 50% { opacity: 1; box-shadow: 0 0 15px #a855f7, 0 0 25px #a855f7; width: 80%; } }
+        .scanline-divider { height: 2px; background: linear-gradient(90deg, transparent, #460b7d, transparent); margin: 4rem auto; animation: scanline-pulse 3s infinite alternate ease-in-out; }
+    </style>
+</head>
+<body>
+
+<header id="main-header" class="bg-gray-900 bg-opacity-80 backdrop-blur-sm sticky top-0 z-50 shadow-lg transition-all duration-300">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-white">Virtuous</a>
+        <div class="hidden md:flex space-x-8">
+            <a href="#home" class="nav-link text-white hover:text-blue-400 transition">Home</a>
+            <a href="services.html" class="nav-link text-white hover:text-blue-400 transition">Services</a>
+            <a href="about.html" class="nav-link text-white hover:text-blue-400 transition">About Us</a>
+            <a href="contact.html" class="nav-link text-white hover:text-blue-400 transition">Contact</a>
+        </div>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-90 backdrop-blur-sm">
+        <div class="flex flex-col items-center py-4 space-y-4">
+            <a href="#home" class="text-white text-lg">Home</a>
+            <a href="services.html" class="text-white text-lg">Services</a>
+            <a href="about.html" class="text-white text-lg">About Us</a>
+            <a href="contact.html" class="text-white text-lg">Contact</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="py-20 lg:py-32 text-center relative overflow-hidden h-[100vh] flex items-center justify-center">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+            <source src="75137800c359318c88c0ef94f73a25bc_720w.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Gradient overlay for readability -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/70 to-purple-900/70 z-0"></div>
+
+        <!-- Particles overlay -->
+        <div id="particles-js" class="absolute inset-0 z-0"></div>
+
+        <!-- Hero Content -->
+        <div class="container mx-auto px-6 relative z-10 h-full flex flex-col justify-center">
+            <div id="hero-text-scene">
+                <h1 class="text-4xl lg:text-8xl font-extrabold text-white leading-tight mb-4 glitch-text glitch-text-active" id="virtuous-title">VIRTUOUS</h1>
+                <p class="text-xl lg:text-3xl text-gray-300 font-medium mb-12" id="subtitle" data-aos="fade-up" data-aos-duration="1200">
+                    Building Society for Digital Users: The Architecture of Trustless Futures
+                </p>
+            </div>
+            <a href="#services" class="btn-primary inline-block px-8 py-4 bg-purple-600 text-white font-semibold rounded-full shadow-lg hover:bg-purple-700 transition transform hover:scale-105" data-aos="zoom-in" data-aos-delay="500">
+                Engage Protocol
+            </a>
+        </div>
+    </section>
+
+    <div class="scanline-divider max-w-5xl"></div>
+</main>
+
+<footer class="bg-gray-900 pt-10 pb-6 mt-16 border-t border-gray-700">
+    <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center flex-wrap">
+             <a href="#" class="text-xl font-bold text-white mb-4 md:mb-0">Virtuous</a>
+             <div class="flex space-x-6 text-gray-400 text-sm mb-4 md:mb-0">
+                <a href="#services" class="hover:text-purple-400 transition">Services</a>
+                <a href="#about" class="hover:text-purple-400 transition">Manifesto</a>
+                <a href="#" class="hover:text-purple-400 transition">Privacy Protocol</a>
+             </div>
+        </div>
+        <div class="mt-6 border-t border-gray-800 pt-4 text-center">
+            <p class="text-gray-500 text-xs">&copy; 2025 Virtuous Pro. Protocol Version 1.1.2-beta. Deployment Status: Under Exploration.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Scroll header
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) header.classList.add('scrolled-header');
+        else header.classList.remove('scrolled-header');
+    });
+
+    // Glitch toggle
+    const glitchTitle = document.querySelector('.glitch-text');
+    setTimeout(() => glitchTitle.classList.remove('glitch-text-active'), 100);
+
+    // GSAP hero animation
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#home",
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+            pin: true,
+        }
+    })
+    .to("#virtuous-title", { scale: 0.8, y: "-=100", opacity: 0.3, duration: 1.5 }, 0)
+    .to("#subtitle", { y: "+=50", opacity: 0, duration: 1 }, 0);
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000, once: true });</script>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS("particles-js", {
+        "particles": {
+            "number": { "value": 120, "density": { "enable": true, "value_area": 1200 } },
+            "color": { "value": ["#8a2be2", "#4a90e2", "#c0c0c0"] },
+            "shape": { "type": ["circle", "polygon"], "polygon": { "nb_sides": 5 } },
+            "opacity": { "value": 0.8, "random": true, "anim": { "enable": true, "speed": 0.5, "opacity_min": 0.1 } },
+            "size": { "value": 3, "random": true, "anim": { "enable": true, "speed": 2, "size_min": 0.5 } },
+            "line_linked": { "enable": true, "distance": 150, "color": "#4a90e2", "opacity": 0.5, "width": 1 },
+            "move": { "enable": true, "speed": 3, "random": true, "out_mode": "out" }
+        },
+        "interactivity": {
+            "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" } },
+            "modes": { "grab": { "distance": 200, "line_linked": { "opacity": 1 } }, "push": { "particles_nb": 4 } }
+        },
+        "retina_detect": true
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtuous | Services & About (25 images)</title>
+
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0a0f1f, #1b1f3b);
+      color: #f3f3f3;
+      overflow-x: hidden;
+    }
+    h2 {
+      font-size: 2.2rem;
+      background: linear-gradient(to right, #00ffcc, #6a5acd, #ff00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: floatText 6s ease-in-out infinite;
+      margin-bottom: 1rem;
+    }
+    @keyframes floatText {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px) rotateX(10deg); }
+    }
+    .container {
+      width: 92%;
+      max-width: 1300px;
+      margin: auto;
+      padding: 2.5rem 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: rgba(20,20,40,0.92);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,255,200,0.06);
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+      text-align: left;
+      overflow: hidden;
+      position: relative;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 16px 40px rgba(0,255,200,0.12);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 0.9rem;
+      transition: transform 0.5s ease;
+    }
+    .card:hover img { transform: scale(1.08); }
+    .card h3 {
+      color: #fff;
+      margin: 0.2rem 0 0.6rem 0;
+      font-size: 1.05rem;
+    }
+    .card p {
+      color: #c7d2e0;
+      font-size: 0.92rem;
+      line-height: 1.45;
+      margin: 0 0 0.8rem 0;
+    }
+    .card .tag {
+      margin-top: auto;
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: linear-gradient(90deg,#7c3aed,#06b6d4);
+      color: #021;
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    .scanline-divider {
+      margin: 3.5rem auto;
+      width: 80%;
+      height: 2px;
+      background: linear-gradient(to right, transparent, #0ff, transparent);
+      animation: scanline 2s infinite linear;
+    }
+    @keyframes scanline {
+      from { background-position: 0 0; }
+      to { background-position: 200% 0; }
+    }
+
+    section { padding: 3.5rem 0; }
+
+
+    /* About */
+    #about .hero-img { width:100%; border-radius:12px; margin: 1.25rem 0; display:block; }
+
+    @media (max-width: 640px) {
+      .card { min-height: 300px; }
+      h2 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="wrap">
+    <header>
+      <div><a href="webpage.html" style="color:var(--muted)">← Home</a></div>
+    </header>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Services We Render: Core Technical Pillars</h2>
+
+      <div class="grid">
+        <!-- 1 -->
+        <div class="card">
+          <img src="0cdfccf4a1b751467526c2ca69dd920e.jpg" alt="Digital Marketing">
+          <h3>🚀 Digital Marketing</h3>
+          <p>Predictive Model Fusion (PMF) for hyper-targeted segmentation across decentralized networks. On-chain attribution and auditable ROI dashboards.</p>
+          <div class="tag">PMF • On-chain Analytics</div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card">
+          <img src="6ba22a4ee313cc3b889f0744ad3945d3.jpg" alt="Web Development">
+          <h3>💻 Web Development</h3>
+          <p>Adaptive Service Environments (ASEs) with CI/CD, observability, and VSFP patterns for resilient, low-latency user experiences.</p>
+          <div class="tag">ASE • CI/CD</div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card">
+          <img src="56ab6afcb8d8d0cc2b31ba689defecd1.jpg" alt="Financial Services">
+          <h3>💰 Financial Services</h3>
+          <p>Design and audit DeFi primitives: AMMs, liquidity pools, and regulatory-first deployments for compliant cross-border finance.</p>
+          <div class="tag">DeFi • Compliance</div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card">
+          <img src="87c36f9c413837e20ebdd5cd85e28d84.jpg" alt="Training & Consulting">
+          <h3>🎓 Training & Consulting</h3>
+          <p>Tokenomics workshops, governance playbooks, and TGE strategy to prepare teams for sustainable, community-driven launches.</p>
+          <div class="tag">Tokenomics • DAO Ops</div>
+        </div>
+
+        <!-- 5 -->
+        <div class="card">
+          <img src="928c5fcad768e02e18aaab15e1e34ebf.jpg" alt="Cybersecurity">
+          <h3>🔒 Post-Quantum Security</h3>
+          <p>Post-quantum cryptography assessments and implementation to future-proof critical systems against quantum threats.</p>
+          <div class="tag">Post-Quantum</div>
+        </div>
+
+        <!-- 6 -->
+        <div class="card">
+          <img src="5143b42f6ddad08a0535511d22167b19.jpg" alt="AI Integration">
+          <h3>🤖 AI Integration</h3>
+          <p>AI-powered predictive intelligence integrated with your stack — from edge inference to cloud model orchestration.</p>
+          <div class="tag">AI • MLOps</div>
+        </div>
+
+        <!-- 7 -->
+        <div class="card">
+          <img src="cffcbec4c5d20014a18466b1f0c0354d.jpg" alt="Data Analytics">
+          <h3>📊 Data Analytics</h3>
+          <p>Real-time data pipelines and dashboards that convert telemetry into strategic decisions and growth signals.</p>
+          <div class="tag">Telemetry • BI</div>
+        </div>
+
+        <!-- 8 -->
+        <div class="card">
+          <img src="3839d765a7363fae9634c8060909aa3c.jpg" alt="Cloud Computing">
+          <h3>☁️ Cloud Architecture</h3>
+          <p>Multi-cloud orchestration, infra-as-code, and resilient topology design for predictable SLAs and cost-efficiency.</p>
+          <div class="tag">Cloud • IaC</div>
+        </div>
+
+        <!-- 9 -->
+        <div class="card">
+          <img src="9af1065fbac3b2748832cbbda3a6b315.jpg" alt="Blockchain Engineering">
+          <h3>🔗 Blockchain Engineering</h3>
+          <p>Smart contract development, audits, and cross-chain tooling to build composable decentralized applications (dApps).</p>
+          <div class="tag">Smart Contracts</div>
+        </div>
+
+        <!-- 10 -->
+        <div class="card">
+          <img src="ui.jpg" alt="UX/UI">
+          <h3>🎨 UX & Product Design</h3>
+          <p>Human-centered interfaces and interactions that make complex systems intuitive and delightful to use.</p>
+          <div class="tag">Design • Research</div>
+        </div>
+
+        <!-- 11 -->
+        <div class="card">
+          <img src="mobile,app.jpg" alt="Mobile Apps">
+          <h3>📱 Mobile & Smart-TV Apps</h3>
+          <p>Native and cross-platform applications for mobile and smart TV ecosystems with secure authentication and streaming support.</p>
+          <div class="tag">Mobile • TV</div>
+        </div>
+
+        <!-- 12 -->
+        <div class="card">
+          <img src="logistics,automation.jpg" alt="IoT">
+          <h3>🔌 IoT & Edge Systems</h3>
+          <p>Edge compute, device identity, and secure telemetry for low-latency, offline-capable deployments.</p>
+          <div class="tag">Edge • IoT</div>
+        </div>
+
+        <!-- 13 -->
+        <div class="card">
+          <img src="iot device.jpg" alt="Logistics">
+          <h3>🚚 Logistics Automation</h3>
+          <p>Automation for supply chain tracking, verifiable provenance, and optimization via predictive routing.</p>
+          <div class="tag">Supply Chain</div>
+        </div>
+
+        <!-- 14 -->
+        <div class="card">
+          <img src="industrial,manufacturing.jpg" alt="Industrial">
+          <h3>🏭 Industrial Systems</h3>
+          <p>Custom SCADA integrations, telemetry aggregation and secure remote maintenance tooling for heavy industry.</p>
+          <div class="tag">SCADA • OT</div>
+        </div>
+
+        <!-- 15 -->
+        <div class="card">
+          <img src="52f81d4c16aaa3d40a0198d483ec990c.jpg" alt="AgriTech">
+          <h3>🌾 AgriTech Solutions</h3>
+          <p>IoT-enabled monitoring and predictive analytics for irrigation, yield forecasting and sustainable operations.</p>
+          <div class="tag">AgriTech</div>
+        </div>
+
+        <!-- 16 -->
+        <div class="card">
+          <img src="b696ee610d8aac5441d3d68cf64f6242.jpg" alt="Healthcare">
+          <h3>🩺 Health & MedTech</h3>
+          <p>HIPAA-aware integrations, medical telemetry pipelines, and secure patient identity management for telehealth.</p>
+          <div class="tag">MedTech</div>
+        </div>
+
+        <!-- 17 -->
+        <div class="card">
+          <img src="72d66aa60dd2a011416822753faf43b2.jpg" alt="EdTech">
+          <h3>📚 EdTech & Training Platforms</h3>
+          <p>Interactive learning platforms, assessment engines and XR-supported training experiences for enterprise upskilling.</p>
+          <div class="tag">EdTech</div>
+        </div>
+
+        <!-- 18 -->
+        <div class="card">
+          <img src="4205672c22c8c6ffd60ab8e947748ae1.jpg" alt="FinTech">
+          <h3>🏦 FinTech Integrations</h3>
+          <p>Payment rails, KYC workflows and tokenized instruments engineered with compliance-first architecture.</p>
+          <div class="tag">FinTech</div>
+        </div>
+
+        <!-- 19 -->
+        <div class="card">
+          <img src="c9eb15a9bf0b0152c925d423c58399bf.jpg" alt="Legal">
+          <h3>⚖️ Legal Engineering & Compliance</h3>
+          <p>Policy-first product design, sandbox navigation and legal automation for regulated market rollouts.</p>
+          <div class="tag">Legal • RegTech</div>
+        </div>
+
+        <!-- 20 -->
+        <div class="card">
+          <img src="101b6cc9b21317fd96feb7efa6a271f2.jpg" alt="DAO Governance">
+          <h3>🗳️ DAO Governance</h3>
+          <p>Designing governance token models, voting mechanisms, and incentive systems for robust decentralized communities.</p>
+          <div class="tag">Governance</div>
+        </div>
+
+        <!-- 21 -->
+        <div class="card">
+          <img src="385a740cc3c52cc59879e2ea7d74d5c8.jpg" alt="Tokenomics">
+          <h3>🔢 Tokenomics Modeling</h3>
+          <p>Financial modeling, circulation analysis and incentive design to align protocol economics with long-term growth.</p>
+          <div class="tag">Economics</div>
+        </div>
+
+        <!-- 22 -->
+        <div class="card">
+          <img src="e171e7b201ec3d9db46ad502a2052257.jpg" alt="Audit">
+          <h3>🔍 Security Audits</h3>
+          <p>Comprehensive security assessments across smart contracts, infra, and application layers with clear remediation plans.</p>
+          <div class="tag">Audit</div>
+        </div>
+
+        <!-- 23 -->
+        <div class="card">
+          <img src="9cbee93498787687fee786551ca303eb.jpg" alt="Metaverse">
+          <h3>🕶️ Metaverse & XR</h3>
+          <p>Immersive experiences, virtual economies and 3D environments designed for social and commercial interactions.</p>
+          <div class="tag">XR • Metaverse</div>
+        </div>
+
+        <!-- 24 -->
+        <div class="card">
+          <img src="11bd523c777de4aa0bf1e2277ebebcf7.jpg" alt="Branding">
+          <h3>✨ Brand & Creative Studios</h3>
+          <p>Brand systems, motion identity, and campaign creative that translate technical value into human stories.</p>
+          <div class="tag">Branding</div>
+        </div>
+
+        <!-- 25 -->
+        <div class="card">
+          <img src="997121c6604554ddd47d126910d0f805.jpg" alt="R&D">
+          <h3>🔬 Research & Innovation</h3>
+          <p>Research partnerships, prototyping and PoC development to validate emerging technologies and go-to-market strategies.</p>
+          <div class="tag">R&D</div>
+        </div>
+
+      </div> <!-- grid -->
+    </div> <!-- container -->
+  </section>
+
+  <div class="scanline-divider"></div>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us: The Architecture of Trustless Futures</h2>
+      <img class="hero-img" src="9ea82e0ec9f095a7804c9e4cbbe0c1c3.jpg" alt="Futuristic Vision">
+      <p>Virtuous is a convergence point where emergent science meets computational power. Our mission is built on the philosophy of Digital Determinism: democratizing digital prosperity by crafting fault-tolerant solutions guided by Immutability, Transparency, and User Sovereignty. Each project we ship is a step toward Meta-Society 4.0.</p>
+      <p>Our polymath team specializes in Distributed Ledger Technology (DLT), low-latency network optimization and post-quantum cybersecurity. We are executing a 5-year roadmap that includes launching Virtuous vDAO and developing the Layer-Zero Protocol (VL-0) for universal cross-chain communication.</p>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contact — Virtuous</title>
+  <style>
+    :root{--bg1:#081226;--bg2:#071028;--accent1:#06b6d4;--accent2:#7c3aed;--muted:#9fb0c8}
+    *{box-sizing:border-box} body{margin:0;font-family:"Poppins",system-ui;color:#e6eef8;background:linear-gradient(140deg,var(--bg1),var(--bg2))}
+    .wrap{max-width:900px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    h1{margin:0;font-weight:800;background:linear-gradient(90deg,var(--accent1),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent; animation:float 3s infinite}
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:22px; border-radius:14px; border:1px solid rgba(255,255,255,0.03); margin-top:18px}
+    .muted{color:var(--muted)}
+    .cta{display:inline-block;padding:12px 18px;border-radius:999px;background:linear-gradient(90deg,var(--accent2),var(--accent1));color:#021;font-weight:800;margin-top:12px;transition:transform .18s}
+    .cta:hover{transform:translateY(-6px) scale(1.04)}
+    .socials{display:flex;gap:12px;margin-top:18px}
+    .soc{width:60px;height:60px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.03);transition:transform .18s}
+    .soc img{width:36px;height:36px}
+    .soc:hover{transform:translateY(-6px)}
+    footer{margin-top:20px;color:var(--muted);text-align:center}
+    input,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;resize:vertical}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Connect With Us: Initiate Secure Communications</h1>
+      <div><a href="webpage.html" style="color:var(--muted)">← Home</a></div>
+    </header>
+
+    <div class="card">
+      <p style="font-weight:700;margin:0 0 8px 0">Request Access Key</p>
+      <p class="muted">To start a secure conversation and request a private access key, briefly describe your project below. We respond to qualified inquiries within 48 hours.</p>
+
+      <form style="margin-top:12px" onsubmit="event.preventDefault();alert('Request received — we will reply using your preferred contact method.');">
+        <input type="text" name="name" placeholder="Your name / organization" required />
+        <div style="height:10px"></div>
+        <input type="email" name="email" placeholder="Email address" required />
+        <div style="height:10px"></div>
+        <textarea name="message" rows="6" placeholder="Brief description (goals, timeline, budget)"></textarea>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;align-items:center">
+          <button class="cta" type="submit">Request Access Key</button>
+          <div style="color:var(--muted);font-size:13px">Or contact us via</div>
+          <div class="socials">
+            <a class="soc" href="https://www.fiverr.com/users/kerenjare/" target="_blank" title="Fiverr">
+              <img src="https://www.vectorlogo.zone/logos/fiverr/fiverr-tile.svg" alt="Fiverr">
+            </a>
+            <a class="soc" href="https://twitter.com/" target="_blank" title="Twitter">
+              <img src="https://www.vectorlogo.zone/logos/twitter/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a class="soc" href="https://github.com/" target="_blank" title="GitHub">
+              <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="GitHub">
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer>&copy; 2025 Virtuous · Request Access for secure onboarding</footer>
+  </div>
+</body>
+</html>

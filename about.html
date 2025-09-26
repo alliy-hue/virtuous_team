@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>About — Virtuous</title>
+  <style>
+    :root{--bg1:#020617;--bg2:#071028;--accent:#7c3aed;--muted:#9fb0c8;--radius:14px}
+    *{box-sizing:border-box} body{margin:0;font-family:"Poppins",system-ui;color:#e6eef8;background:linear-gradient(160deg,var(--bg1),var(--bg2))}
+    .wrap{max-width:1000px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    h1{margin:0;font-size:20px;font-weight:800;background:linear-gradient(90deg,#06b6d4,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent; animation:tilt 3.8s infinite ease-in-out}
+    @keyframes tilt{0%{transform:translateY(0)}50%{transform:translateY(-6px) rotateX(4deg)}100%{transform:translateY(0)}}
+    .content{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px}
+    @media(min-width:900px){.content{grid-template-columns:1fr 420px}}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:var(--radius); padding:20px; border:1px solid rgba(255,255,255,0.03)}
+    .muted{color:var(--muted)}
+    img{width:100%; border-radius:12px}
+    .pill{display:inline-block;padding:6px 10px;background:linear-gradient(90deg,#7c3aed,#06b6d4); color:#021; border-radius:999px; font-weight:700}
+    footer{margin-top:28px;color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>The Architecture of Trustless Futures</h1>
+      <div><a href="webpage.html" style="color:var(--muted)">Home</a></div>
+    </header>
+
+    <div class="content">
+      <div class="card">
+        <p style="font-weight:700; margin:0 0 8px 0">Who we are</p>
+        <p class="muted">
+          Virtuous is the convergence point where emergent science meets computational power.
+          Born from a conviction that digital prosperity should be distributed, we engineer fault-tolerant systems guided by Immutability,
+          Transparency and User Sovereignty. Our goal is to accelerate the transition to a Meta-Society where identity, value and governance are programmable.
+        </p>
+
+        <p style="font-weight:700; margin-top:12px">What we build</p>
+        <p class="muted">
+          Our team of polymaths specializes in Distributed Ledger Technology, low-latency network engineering, and post-quantum cybersecurity.
+          Current initiatives: launching the Virtuous vDAO for community governance and developing the Layer-Zero protocol (VL-0) for universal cross-chain communication.
+          We marry research-grade cryptography with pragmatic product design to enable real-world adoption.
+        </p>
+
+        <p style="margin-top:12px" class="muted"><span class="pill">Immutability</span> <span class="pill" style="margin-left:8px">Transparency</span> <span class="pill" style="margin-left:8px">Sovereignty</span></p>
+      </div>
+
+      <aside class="card" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=e9f3d6ff0a5b6e06c3e9df7b1a4fba1d" alt="Futuristic illustration">
+        <p class="muted" style="font-size:13px;margin-top:8px">Bridge between cryptographic research and product-ready engineering — human-first decentralization.</p>
+      </aside>
+    </div>
+
+    <footer>&copy; 2025 Virtuous · Designed for long-term systems</footer>
+  </div>
+</body>
+</html>
